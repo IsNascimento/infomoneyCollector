@@ -19,4 +19,4 @@ RUN wget https://cdn.azul.com/zulu/bin/zulu14.28.21-ca-jre14.0.1-linux_musl_x64.
 RUN tar -xvf zulu14.28.21-ca-jre14.0.1-linux_musl_x64.tar.gz
 RUN apk del wget tar
 COPY --from=builder /workdir/target/infomoneyCollector.jar .
-CMD ["/myapp/zulu14.28.21-ca-jre14.0.1-linux_musl_x64/bin/java","-jar","/myapp/app.jar"]
+CMD ["/myapp/zulu14.28.21-ca-jre14.0.1-linux_musl_x64/bin/java","-jar","/myapp/infomoneyCollector.jar"]

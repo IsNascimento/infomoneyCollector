@@ -1,5 +1,5 @@
 version: "3"
 services:
-  mikesapp:
+  infomoneycollector:
     build: .
     network_mode: host
